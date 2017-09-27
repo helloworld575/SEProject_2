@@ -36,10 +36,15 @@
 <constant name="struts.devMode" value="true" />
     <package name="rest-showcase" extends="rest-default" namespace="/">
         <global-allowed-methods>index,show,create,update,destroy,deleteConfirm,edit,editNew</global-allowed-methods>
-        <action name="hello">
-	<result>
+        <action name="HelloAction" class="helloworld.HelloAction" method="index">
+	<result name="success">
 		/hello.jsp
 	</result>        
+             </action>
+             <action name="hello">
+	<result name="success">
+		/index.jsp
+	</result>             
              </action>
     </package>
 </struts>
