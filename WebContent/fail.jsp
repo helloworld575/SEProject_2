@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=GB18030"
     pageEncoding="GB18030"%>
+        <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,6 +8,8 @@
 <title>fail</title>
 </head>
 <body>
-user name or password wrong£¡
+<s:fielderror fieldName="password" theme="simple"/>
+<s:property value="fieldErrors.get('password')[1] "/>word wrong£¡ 
+<s:debug></s:debug>
 </body>
 </html>

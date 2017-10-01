@@ -39,12 +39,11 @@
      -->
 <constant name="struts.devMode" value="true" />
     <package name="rest-showcase" extends="rest-default" namespace="/">
-        <global-allowed-methods>index,show,create,update,destroy,deleteConfirm,edit,editNew</global-allowed-methods>
-        <action name="HelloAction" class="helloworld.HelloAction">
+        <action name="HelloAction" class="helloworld.userLogin" method="index">
 	<result name="success">
 		/hello.jsp
 	</result>
-	<result name="fail">
+	<result name="login">
 		/fail.jsp
 	</result>        
              </action>
@@ -54,12 +53,5 @@
 	</result>             
              </action>
     </package>
-<package name="user" extends="struts-default" namespace="/user">
-	<action name="userAdd" class="helloworld.UserAction">
-		<result>/index.jsp</result>
-	</action>
-		<action name="userDelete" class="helloworld.UserAction">
-		<result>/hello.jsp</result>
-	</action>
-</package>
+
 </struts>

@@ -10,7 +10,7 @@
 <body>
 <h1>Please Enter Your Name</h1>
 <a href="HelloAction">helloworld</a>
-<form action="HelloAction">
+<form action="HelloAction" >
 	<label for="name">Please input your name</label>
 	<input type="text" name="name"><br>
 	<label for="password">Please input your password</label>
