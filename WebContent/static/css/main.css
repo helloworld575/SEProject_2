@@ -1,0 +1,46 @@
+
+body{
+    padding: 5px 5px 0 5px;
+}
+
+.jumbotron{
+    opacity: 0.8
+}
+#book_list{
+}
+#header_text{
+    font-size: 50px;
+    font-family: "Microsoft YaHei UI", fantasy;
+    font-color:#000;
+}
+#header_text:hover{
+	text-decoration:none;
+}
+#down_part{
+    display-inside: block;
+}
+#danger_text{
+    font-size:20px;
+}
+#Book_text{
+    font-size:25px;
+}
+#Author_text{
+    font-size: 25px;
+}
+a{
+	color:#000;
+}
+a:visited{
+    color: #000;
+}
+a:hover{
+    color:#000;
+    text-decoration:none;
+}
+.a_class{
+	color:#00f;
+}
+.a_class:visited{
+    color: #000;
+}

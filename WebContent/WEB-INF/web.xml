@@ -15,7 +15,7 @@
         <filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
     </filter>
     <!-- END SNIPPET: filter -->
-
+ 
     <filter-mapping>
         <filter-name>action2</filter-name>
         <url-pattern>/*</url-pattern>
